@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:x14="http://schemas.microsoft.com/office/spreadsheetml/2009/9/main" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac" xmlns:xdr="http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing" mc:Ignorable="x14ac">
+    <sheetPr codeName="Sheet11" />
+    <dimension ref="A1:G2" />
+    <sheetViews>
+        <sheetView zoomScaleNormal="100" workbookViewId="0">
+            <pane xSplit="1" ySplit="1" topLeftCell="B2" activePane="bottomRight" state="frozen" />
+            <selection pane="topRight" />
+            <selection pane="bottomLeft" activeCell="A2" sqref="A2" />
+			<selection pane="bottomRight" activeCell="A2" sqref="A2" />
+        </sheetView>
+    </sheetViews>
+    <sheetFormatPr defaultRowHeight="12.75" x14ac:dyDescent="0.2"/>
+    <cols>
+        <col min="1" max="1" width="25" customWidth="1" />
+        <col min="2" max="2" width="16" customWidth="1" />
+        <col min="3" max="3" width="10" customWidth="1" />
+        <col min="4" max="5" width="15" customWidth="1" />
+        <col min="6" max="6" width="20" customWidth="1" />
+        <col min="7" max="7" width="80" customWidth="1" />
+    </cols>
+    <sheetData>
+        <row r="1" spans="1:7" ht="29.5" x14ac:dyDescent="0.2">
+            <c r="A1" s="10" t="s">
+                <v>39</v>
+            </c>
+            <c r="B1" s="10" t="s">
+                <v>85</v>
+            </c>
+            <c r="C1" s="10" t="s">
+                <v>79</v>
+            </c>
+            <c r="D1" s="10" t="s">
+                <v>42</v>
+            </c>
+            <c r="E1" s="10" t="s">
+                <v>86</v>
+            </c>
+            <c r="F1" s="10" t="s">
+                <v>87</v>
+            </c>
+            <c r="G1" s="10" t="s">
+                <v>88</v>
+            </c>
+        </row>
+		<dataToAdd/>
+    </sheetData>
+	<autoFilter ref="A1:G#" />
+	<dataValidations count="2">
+        <dataValidation allowBlank="1" showInputMessage="1" prompt="Requested Product Title. This is merely included for filtering purposes" sqref="A1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="# of units impacted by record, with total hours of those units in parentheses." sqref="C1" />
+    </dataValidations>
+    <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3" />
+    <pageSetup orientation="portrait" r:id="rId1" />
+</worksheet>

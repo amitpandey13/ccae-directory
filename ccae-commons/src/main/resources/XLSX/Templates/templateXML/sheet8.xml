@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:x14="http://schemas.microsoft.com/office/spreadsheetml/2009/9/main" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac" xmlns:xdr="http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing" mc:Ignorable="x14ac">
+    <sheetPr codeName="Sheet9" />
+    <dimension ref="A1:X2" />
+    <sheetViews>
+        <sheetView zoomScaleNormal="100" workbookViewId="0">
+            <pane xSplit="4" ySplit="1" topLeftCell="E2" activePane="bottomRight" state="frozen" />
+            <selection pane="topRight" />
+            <selection pane="bottomLeft" activeCell="A2" sqref="A2" />
+			<selection pane="bottomRight" activeCell="A2" sqref="A2" />
+        </sheetView>
+    </sheetViews>
+    <sheetFormatPr defaultRowHeight="12.75" x14ac:dyDescent="0.2"/>
+    <cols>
+        <col min="1" max="1" width="25" customWidth="1" />
+        <col min="2" max="4" width="10" customWidth="1" />
+        <col min="5" max="5" width="23" customWidth="1" />
+        <col min="6" max="6" width="35" customWidth="1" />
+        <col min="7" max="7" width="19" customWidth="1" />
+        <col min="8" max="8" width="41" customWidth="1" />
+        <col min="9" max="9" width="19" customWidth="1" />
+		<col min="10" max="11" width="19" customWidth="1" />
+		<col min="12" max="13" width="16" customWidth="1" />
+		<col min="14" max="14" width="13" customWidth="1" />
+		<col min="15" max="15" width="30" customWidth="1" />
+		<col min="16" max="16" width="13" customWidth="1" />
+		<col min="17" max="17" width="17" customWidth="1" />
+		<col min="18" max="18" width="22" customWidth="1" />
+		<col min="19" max="21" width="25" customWidth="1" />
+		<col min="22" max="22" width="20" customWidth="1" />
+		<col min="23" max="23" width="23" customWidth="1" />
+		<col min="24" max="24" width="22" customWidth="1" />
+    </cols>
+    <sheetData>
+        <row r="1" spans="1:22" ht="52.5" x14ac:dyDescent="0.2">
+            <c r="A1" s="10" t="s">
+                <v>71</v>
+            </c>
+            <c r="B1" s="10" t="s">
+                <v>72</v>
+            </c>
+            <c r="C1" s="10" t="s">
+                <v>73</v>
+            </c>
+            <c r="D1" s="10" t="s">
+                <v>74</v>
+            </c>
+            <c r="E1" s="10" t="s">
+                <v>40</v>
+            </c>
+            <c r="F1" s="10" t="s">
+                <v>41</v>
+            </c>
+            <c r="G1" s="10" t="s">
+                <v>43</v>
+            </c>
+            <c r="H1" s="10" t="s">
+                <v>65</v>
+            </c>
+            <c r="I1" s="10" t="s">
+                <v>44</v>
+            </c>
+            <c r="J1" s="10" t="s">
+                <v>66</v>
+            </c>
+            <c r="K1" s="10" t="s">
+                <v>67</v>
+            </c>
+            <c r="L1" s="10" t="s">
+                <v>104</v>
+            </c>
+            <c r="M1" s="10" t="s">
+                <v>105</v>
+            </c>
+            <c r="N1" s="10" t="s">
+                <v>47</v>
+            </c>
+            <c r="O1" s="10" t="s">
+                <v>48</v>
+            </c>
+            <c r="P1" s="10" t="s">
+                <v>49</v>
+            </c>
+            <c r="Q1" s="10" t="s">
+                <v>56</v>
+            </c>
+            <c r="R1" s="10" t="s">
+                <v>57</v>
+            </c>
+            <c r="S1" s="10" t="s">
+                <v>68</v>
+            </c>
+            <c r="T1" s="10" t="s">
+                <v>69</v>
+            </c>
+            <c r="U1" s="10" t="s">
+                <v>70</v>
+            </c>
+            <c r="V1" s="10" t="s">
+                <v>59</v>
+            </c>
+            <c r="W1" s="10" t="s">
+                <v>60</v>
+            </c>
+			<c r="X1" s="10" t="s">
+                <v>61</v>
+            </c>
+        </row>
+		<dataToAdd/>
+    </sheetData>
+	<autoFilter ref="A1:X#" />
+	<dataValidations count="17">
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="Available: Window is available for requested Product, Media, Territory/Language, and Right Types_x000a_Conditional: Indicates there is an unresolved carve-out that would affect availability, or there is an Override rights restriction." sqref="G1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="Will show the unavailable right type, or will indicate there are missing or restricted rights in." sqref="H1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="Y = Exclusively Available_x000a_N = Non-exclusively Available_x000a_C = Conditionally available._x000a__x000a_Determined only by existing licenses and restrictions, does not take into account avails criteria." sqref="I1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="Start date of window, corresponds to window dates in AvailsMediaTerritory" sqref="J1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="End Date of Window, corresponds to window dates in AvailsMediaTerritory" sqref="K1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="If licensed time-periods block availability, the resulting available time-periods are shown by day, Midnight - Midnight." sqref="L1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="Lists SO# and Licensed Time Periods" sqref="M1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="Are all optional criteria met in this window?" sqref="N1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="Media, Territory/Language, and Right Type that are unavailable but were designated optional.  Only lists first three." sqref="O1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="Term length of window (in months)" sqref="P1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="Territories with Availability, based on number of territories in &quot;Breakout By&quot; designation." sqref="Q1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="Customers with deals in this time window" sqref="R1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="SO # or Sales Ref # for exclusive licenses during this window" sqref="S1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="SO # or Sales Ref # for non-exclusive licenses during this window" sqref="T1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="SO # or Sales Ref # for blocking during this window" sqref="U1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="Listing carve-outs during this window._x000a_Format:_x000a_SO #/Sales Ref #: Right Type being carved-out, carveout with carveout type and any time-periods." sqref="V1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="Detail any restrictions on Rights/Licensing with Product, Restriction, and severity." sqref="X1" />
+	</dataValidations>
+    <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3" />
+    <pageSetup orientation="portrait" r:id="rId1" />
+</worksheet>

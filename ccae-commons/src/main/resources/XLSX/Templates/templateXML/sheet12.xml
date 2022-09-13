@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:x14="http://schemas.microsoft.com/office/spreadsheetml/2009/9/main" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac" xmlns:xdr="http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing" mc:Ignorable="x14ac">
+    <sheetPr codeName="Sheet13" />
+    <dimension ref="A1:R2" />
+    <sheetViews>
+        <sheetView zoomScaleNormal="100" workbookViewId="0">
+            <pane xSplit="2" ySplit="1" topLeftCell="C2" activePane="bottomRight" state="frozen" />
+            <selection pane="topRight" />
+            <selection pane="bottomLeft" activeCell="B2" sqref="B2" />
+			<selection pane="bottomRight" activeCell="B2" sqref="B2" />
+        </sheetView>
+    </sheetViews>
+    <sheetFormatPr defaultRowHeight="12.75" x14ac:dyDescent="0.2"/>
+    <cols>
+        <col min="1" max="1" width="18" hidden="1" customWidth="1" />
+		<col min="2" max="2" width="25" customWidth="1"/>
+		<col min="3" max="3" width="16" customWidth="1"/>
+		<col min="4" max="4" width="15" customWidth="1"/>
+		<col min="5" max="5" width="13" customWidth="1"/>
+		<col min="6" max="6" width="18" customWidth="1"/>
+		<col min="7" max="7" width="25" customWidth="1"/>
+		<col min="8" max="8" width="23" customWidth="1"/>
+		<col min="9" max="9" width="18" customWidth="1"/>
+		<col min="10" max="10" width="25" customWidth="1"/>
+		<col min="11" max="12" width="16" customWidth="1"/>
+		<col min="13" max="13" width="16" customWidth="1"/>
+		<col min="14" max="14" width="19" customWidth="1"/>
+		<col min="15" max="15" width="20" customWidth="1"/>
+		<col min="16" max="16" width="23" customWidth="1"/>
+		<col min="17" max="17" width="20" customWidth="1"/>
+		<col min="18" max="18" width="19" customWidth="1"/>
+		<col min="19" max="19" width="13" customWidth="1"/>
+    </cols>
+    <sheetData>
+        <row r="1" spans="1:17" ht="29.5" x14ac:dyDescent="0.2">
+            <c r="A1" s="10" t="s">
+                <v>75</v>
+            </c>
+            <c r="B1" s="10" t="s">
+                <v>39</v>
+            </c>
+            <c r="C1" s="10" t="s">
+                <v>85</v>
+            </c>
+            <c r="D1" s="10" t="s">
+                <v>42</v>
+            </c>
+            <c r="E1" s="10" t="s">
+                <v>96</v>
+            </c>
+            <c r="F1" s="10" t="s">
+                <v>89</v>
+            </c>
+			<c r="G1" s="10" t="s">
+                <v>106</v>
+            </c>
+            <c r="H1" s="10" t="s">
+                <v>41</v>
+            </c>
+            <c r="I1" s="10" t="s">
+                <v>40</v>
+            </c>
+            <c r="J1" s="10" t="s">
+                <v>97</v>
+            </c>
+            <c r="K1" s="10" t="s">
+                <v>98</v>
+            </c>
+            <c r="L1" s="10" t="s">
+                <v>99</v>
+            </c>
+            <c r="M1" s="10" t="s">
+                <v>105</v>
+            </c>
+            <c r="N1" s="10" t="s">
+                <v>100</v>
+            </c>
+            <c r="O1" s="10" t="s">
+                <v>59</v>
+            </c>
+            <c r="P1" s="10" t="s">
+                <v>60</v>
+            </c>
+            <c r="Q1" s="10" t="s">
+                <v>101</v>
+            </c>
+            <c r="R1" s="10" t="s">
+                <v>94</v>
+            </c>
+            <c r="S1" s="10" t="s">
+                <v>95</v>
+            </c>
+        </row>
+		<dataToAdd/>
+    </sheetData>
+	<autoFilter ref="A1:S#" />
+	<dataValidations count="6">
+        <dataValidation allowBlank="1" showInputMessage="1" prompt="Requested Product Title. This is merely included for filtering purposes." sqref="B1" />
+        <dataValidation allowBlank="1" showInputMessage="1" prompt="DMS:_x000a_Cancelled,_x000a_Cancelled/License Issued,_x000a_Cancelled/Pending,_x000a_License/Issued,_x000a_License/Pending Revenue,_x000a_Pending/Approved,_x000a_Pending/License" sqref="F1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="Lists SO# and Licensed Time Periods" sqref="M1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="List carve-outs, and what they are carving from" sqref="O1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="Comments / Notes on Carve-Out" sqref="P1" />
+		<dataValidation allowBlank="1" showInputMessage="1" prompt="Fee here is for the Rights Scope or LPG, it is not just the fees associated with the PMTL at left." sqref="R1" />
+    </dataValidations>
+    <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3" />
+    <pageSetup orientation="portrait" r:id="rId1" />
+</worksheet>

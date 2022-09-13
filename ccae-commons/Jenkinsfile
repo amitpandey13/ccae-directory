@@ -1,0 +1,79 @@
+pipeline {
+    agent any
+    
+    environment {
+	 EMAIL = sh ( script: 'git --no-pager show -s --format=\'%ae\'', returnStdout: true).trim()
+	}
+ 
+    stages {
+    	stage('Compile') {
+            steps {
+            		
+            		sh 'pwd'
+            		sh 'chmod +x gradlew'
+               	 	sh './gradlew clean assemble'
+            	}
+        	}
+        stage('Test') {
+            steps {
+                sh './gradlew test'
+                sh './gradlew jacocoTestReport'
+                sh './gradlew jacocoTestCoverageVerification'
+            }
+        }
+        stage('Code Analysis') {
+            steps {
+                sh './gradlew pmdMain checkstyleMain'
+            }
+        }
+        stage('Build artifact') {
+            steps {
+                sh './gradlew shadowJar'
+            }
+        }
+        stage('Publish') {
+            steps {
+                sh './gradlew publishToMavenLocal'
+            }
+        }
+        stage('Archive') {
+            steps {
+            	script {
+    				def BRANCH = "${env.GIT_BRANCH}".tokenize('/')[-1]
+    				sh (script:"mv build/libs/*-all-*.jar build/libs/pdgc-ccae-commons-${BRANCH}-${BUILD_NUMBER}.jar", returnStdout:true)
+    			}
+            	archiveArtifacts artifacts: 'build/libs/*-${BUILD_NUMBER}.jar', fingerprint: true
+            	archiveArtifacts artifacts: 'build/reports/pmd/**/*.html', fingerprint: true
+            	archiveArtifacts artifacts: 'build/reports/checkstyle/**/*.html', fingerprint: true
+            	junit 'build/test-results/**/*.xml'
+        
+            }
+        }
+        stage('Clean') {
+            steps {
+                sh 'rm -r *'
+            }
+        }
+       stage('Trigger Downstream Build') {
+       	when {
+       	 	expression { env.BRANCH_NAME.contains('develop') || env.BRANCH_NAME.contains('release') || 
+       	 		env.BRANCH_NAME.contains('hotfix') || env.BRANCH_NAME.contains('master') || env.BRANCH_NAME.contains('jenkinsfile') }
+       	 }
+        	steps {
+        		build job: "Avails-Engine/${env.BRANCH_NAME}", parameters: [[$class: 'StringParameterValue', name: 'TRIGGER', value: 'commons']]
+        		 
+        	}
+        }
+    }
+    
+    post {
+       
+        	failure {
+        		junit 'build/test-results/**/*.xml'
+        	
+  				mail to: "${env.EMAIL}",
+             	subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+             	body: "Something is wrong with ${env.BUILD_URL}"
+  			}
+    }
+}

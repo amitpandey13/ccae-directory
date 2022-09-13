@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:x15="http://schemas.microsoft.com/office/spreadsheetml/2010/11/main" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision" xmlns:xr10="http://schemas.microsoft.com/office/spreadsheetml/2016/revision10" xmlns:xr2="http://schemas.microsoft.com/office/spreadsheetml/2015/revision2" xmlns:xr6="http://schemas.microsoft.com/office/spreadsheetml/2016/revision6" mc:Ignorable="x15 xr xr6 xr10 xr2">
+  <fileVersion appName="xl" lastEdited="7" lowestEdited="5" rupBuild="19029" />
+  <workbookPr codeName="ThisWorkbook" defaultThemeVersion="124226" />
+  <mc:AlternateContent>
+    <mc:Choice Requires="x15">
+      <x15ac:absPath xmlns:x15ac="http://schemas.microsoft.com/office/spreadsheetml/2010/11/ac" url="C:\Users\Public\Debug Console\AddingNewSheet\New folder (2)\" />
+    </mc:Choice>
+  </mc:AlternateContent>
+  <xr:revisionPtr revIDLastSave="0" documentId="13_ncr:1_{7A197B93-F580-49E0-86CE-47DD59A77ABA}" xr6:coauthVersionLast="28" xr6:coauthVersionMax="28" xr10:uidLastSave="{00000000-0000-0000-0000-000000000000}" />
+  <bookViews>
+    <workbookView xWindow="0" yWindow="0" windowWidth="28800" windowHeight="12210" tabRatio="835" firstSheet="4" activeTab="11" xr2:uid="{00000000-000D-0000-FFFF-FFFF00000000}" />
+  </bookViews>
+  <sheets>
+  </sheets>
+  <definedNames>
+    <definedName name="_xlnm._FilterDatabase" localSheetId="7" hidden="1">AvailsByEpisode!$A$1:$U$130</definedName>
+    <definedName name="_xlnm._FilterDatabase" localSheetId="3" hidden="1">AvailsByGroup!$B$1:$Y$12</definedName>
+    <definedName name="_xlnm._FilterDatabase" localSheetId="8" hidden="1">AvailsCalculationDetails!$A$1:$R$686</definedName>
+    <definedName name="_xlnm._FilterDatabase" localSheetId="4" hidden="1">AvailsMedia!$A$1:$Y$13</definedName>
+    <definedName name="_xlnm._FilterDatabase" localSheetId="6" hidden="1">AvailsMediaTerritory!$A$1:$X$355</definedName>
+    <definedName name="_xlnm._FilterDatabase" localSheetId="2" hidden="1">AvailsNet!$A$1:$X$21</definedName>
+    <definedName name="_xlnm._FilterDatabase" localSheetId="5" hidden="1">AvailsTerritory!$A$1:$X$157</definedName>
+    <definedName name="_xlnm._FilterDatabase" localSheetId="11" hidden="1">LicenseHistory!$A$1:$Q$1</definedName>
+  </definedNames>
+  <calcPr calcId="145621" />
+</workbook>
