@@ -31,9 +31,11 @@ plugins {
      id "org.sonarqube" version "3.4.0.2513"
 }
 
- sonarqube {
+sonarqube {
   properties {
-    property "sonar.projectKey", "ccae-dis-that"
+    property "sonar.projectKey", "amitpandey13_ccae-directory"
+    property "sonar.organization", "amitpandey13"
+    property "sonar.host.url", "https://sonarcloud.io"
   }
 }
 
