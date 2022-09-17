@@ -1,0 +1,9 @@
+Simultaneous - Essentially means we can have licenses exist on the same term.
+			   But if any licenses exist at the same time when simultaneous is false,
+			   then the carveout won't work.
+			   
+Spanning     - This just means we will be able to have more than the max customers that was
+               specified across different dimensions
+			   It's effect on simultaneous is that only within the spanning will simultaneous work.
+			   For example, a spanning on Media with max customer 1 and you have two occupying licenses 
+			   on Basic and Free respectively would mean that it would be okay.

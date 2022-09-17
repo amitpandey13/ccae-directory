@@ -1,0 +1,28 @@
+
+
+task assemble {
+    dependsOn gradle.includedBuild('ccae-commons').task(':assemble')
+    dependsOn gradle.includedBuild('ccae-client-commons').task(':assemble')
+}
+
+task clean {
+    dependsOn gradle.includedBuild('ccae-commons').task(':clean')
+    dependsOn gradle.includedBuild('ccae-client-commons').task(':clean')
+}
+
+task build {
+    dependsOn gradle.includedBuild('ccae-commons').task(':build')
+    dependsOn gradle.includedBuild('ccae-client-commons').task(':build')
+}
+
+task test {
+    dependsOn gradle.includedBuild('ccae-commons').task(':test')
+    dependsOn gradle.includedBuild('ccae-client-commons').task(':test')
+}
+
+task pmdCheckstyle {
+    dependsOn gradle.includedBuild('ccae-commons').task(':checkstyleMain')
+    dependsOn gradle.includedBuild('ccae-client-commons').task(':checkstyleMain')
+    dependsOn gradle.includedBuild('ccae-commons').task(':pmdMain')
+    dependsOn gradle.includedBuild('ccae-client-commons').task(':pmdMain')
+}

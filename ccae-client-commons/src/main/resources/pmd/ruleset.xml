@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<ruleset name="PDG ruleset"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+    <description>PDF ruleset</description>
+
+    <rule ref="rulesets/java/strings.xml">
+        <exclude name="ConsecutiveAppendsShouldReuse"/>
+        <exclude name="ConsecutiveLiteralAppends"/>
+        <exclude name="InsufficientStringBufferDeclaration"/>
+    </rule>
+
+    <rule ref="rulesets/java/basic.xml">
+        <exclude name="AvoidBranchingStatementAsLastInLoop"/>
+    </rule>
+
+    <rule ref="rulesets/java/comments.xml/CommentRequired">
+        <properties>
+            <property name="violationSuppressXPath"
+                      value="//ClassOrInterfaceBodyDeclaration/MethodDeclaration/MethodDeclarator[matches(@Image,'(get|is|set)[\p{Lu}].*') and not(FormalParameters/FormalParameter)]"/>
+            <property name="fieldCommentRequirement" value="Ignored"/>
+            <property name="protectedMethodCommentRequirement" value="Ignored"/>
+            <property name="publicMethodCommentRequirement" value="Ignored"/>
+            <property name="enumCommentRequirement" value="Ignored"/>
+        </properties>
+    </rule>
+
+    <rule ref="rulesets/java/clone.xml"/>
+    <rule ref="rulesets/java/codesize.xml">
+        <exclude name="CyclomaticComplexity"/>
+        <exclude name="ModifiedCyclomaticComplexity"/>
+        <exclude name="StdCyclomaticComplexity"/>
+        <exclude name="TooManyFields"/>
+    </rule>
+    <rule ref="rulesets/java/coupling.xml">
+        <exclude name="LawOfDemeter"/>             <!-- New and excluded -->
+        <exclude name="ExcessiveImports"/>
+        <exclude name="LoosePackageCoupling"/>
+    </rule>
+    <rule ref="rulesets/java/empty.xml"/>
+    <rule ref="rulesets/java/finalizers.xml"/>
+    <rule ref="rulesets/java/imports.xml"/>
+    <rule ref="rulesets/java/optimizations.xml">
+        <exclude name="LocalVariableCouldBeFinal"/>
+        <exclude name="AvoidInstantiatingObjectsInLoops"/>
+        <exclude name="RedundantFieldInitializer"/>
+        <exclude name="MethodArgumentCouldBeFinal"/>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml"/>
+    <rule ref="rulesets/java/typeresolution.xml"/>
+    <rule ref="rulesets/java/unusedcode.xml">
+        <exclude name="UnusedPrivateField"/>
+    </rule>
+    <rule ref="rulesets/java/design.xml">
+        <exclude name="ConfusingTernary"/>
+        <exclude name="AvoidSynchronizedAtMethodLevel"/>
+        <exclude name="EmptyMethodInAbstractClassShouldBeAbstract"/>
+        <exclude name="GodClass"/>
+        <exclude name="ImmutableField"/>
+    </rule>
+    <rule ref="rulesets/java/javabeans.xml">
+        <exclude name="BeanMembersShouldSerialize"/>
+    </rule>
+    <rule ref="rulesets/java/logging-java.xml">
+        <exclude name="GuardLogStatementJavaUtil"/>
+    </rule>
+    <rule ref="rulesets/java/naming.xml">
+        <exclude name="ShortVariable"/>
+        <exclude name="LongVariable"/>
+        <exclude name="ShortClassName"/>
+        <exclude name="VariableNamingConventions"/>
+        <exclude name="GenericsNaming"/>
+        <exclude name="AvoidFieldNameMatchingTypeName"/>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml">
+        <exclude name="AvoidCatchingGenericException"/>
+    </rule>
+    <rule ref="rulesets/java/strings.xml/AvoidDuplicateLiterals">
+        <properties>
+            <property name="skipAnnotations" value="true"/>>
+        </properties>
+    </rule>
+</ruleset>

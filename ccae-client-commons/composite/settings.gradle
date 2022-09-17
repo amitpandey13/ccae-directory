@@ -1,0 +1,12 @@
+/**
+ * Composite build to build dependent project together
+ */
+rootProject.name='composite'
+//includeBuild('../../ccae-commons') {
+//    dependencySubstitution {
+//        substitute module('com.pdgc.ccae:pdgc-ccae-commons-all') with project(':')
+//    }
+//}
+includeBuild('../../ccae-commons')
+includeBuild('../../ccae-client-commons')
+
