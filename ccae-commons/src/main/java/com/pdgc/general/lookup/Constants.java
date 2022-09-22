@@ -663,13 +663,13 @@ public class Constants {
 
         if (prop.getProperty("RIGHT_TYPES_TO_IGNORE_FOR_CONFLICT_CHECK") != null) {
             RIGHT_TYPES_TO_IGNORE_FOR_CONFLICT_CHECK = Arrays.asList(
-                prop.getProperty("RIGHT_TYPES_TO_IGNORE_FOR_CONFLICT_CHECK").split("\\s*,\\s*"))
+               Arrays.stream(prop.getProperty("RIGHT_TYPES_TO_IGNORE_FOR_CONFLICT_CHECK").split(",")).map(String::trim).toArray(String[]::new))
                 .stream().map(s -> new Long(s)).collect(Collectors.toSet());
         }
         if (prop.getProperty("CONTRACT_TYPES_FOR_CUSTOMER_GROUP_COMPARISON") != null) {
             CONTRACT_TYPES_FOR_CUSTOMER_GROUP_COMPARISON = Arrays.asList(
-                prop.getProperty("CONTRACT_TYPES_FOR_CUSTOMER_GROUP_COMPARISON").split("\\s*,\\s*"))    
-                .stream().map(s -> new String(s)).collect(Collectors.toSet());
+                     Arrays.stream(prop.getProperty("CONTRACT_TYPES_FOR_CUSTOMER_GROUP_COMPARISON").split(",")).map(String::trim).toArray(String[]::new))
+                    .stream().map(s -> new String(s)).collect(Collectors.toSet());
         }
         else {
             CONTRACT_TYPES_FOR_CUSTOMER_GROUP_COMPARISON.add("Contract");
